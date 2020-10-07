@@ -1,0 +1,94 @@
+body{
+    text-align: center;
+    color: black;
+}
+.pavadinimas{
+    font-family: 'Sacramento';
+}
+h1{
+    font-size: 100px;
+}
+#index{
+  background-image: url('pictures/index-pic.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#tomas{
+    background-image: url('pictures/volvo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  #mamyte{
+    background-image: url('pictures/mb.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  #tevelis{
+    background-image: url('pictures/truck.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  #greta{
+    background-image: url('pictures/toyota.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.content{
+    width: 80%;
+    padding: 20px;
+    margin: 5%;
+}
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4c90af;
+}
+.button:hover {
+    background-color: #4c90af;
+    color: white;
+}
+#apie-volvo{
+    width: 80%;
+    padding: 20px;
+    margin: 5%;
+    background-color: rgba(0, 174, 255, 0.315);
+}
+#mamytes{
+    max-width: 50%;
+    background-color: rgba(127, 255, 212, 0.349);
+}
+#tevelio{
+    max-width: 50%;
+    background-color: rgba(127, 229, 255, 0.349);
+}
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-image: url(pictures/among.png);
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    color:rgb(174, 0, 255);
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+  }
+#click{
+    height: 2px;
+    width: 2px;
+    float: left;
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    bottom: -150px;
+}

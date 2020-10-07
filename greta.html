@@ -8,7 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="index">
+<body id="greta">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Familia:</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +34,60 @@
         </div>
       </nav>
 
-    
- <div class="content">
-      <h1 class="pavadinimas">La familia</h1>
+    <h1 class="pavadinimas">Greta</h1>
 
-    <article>Siandien labai sunkiai mokinosi man :D tai pagalvojau padarysiu jum staigmena ir truputi agilinsiu ka ismokau. Atsidarykit meniu ten rasit savo vardus. paspauskit ant ju ten bus idomiau cia tiesiog tuscia, gal kol baigsiu sugalvosiu kazka idomaus idet :D taigi apie 13valanda pradejau sita misraine rasyt.</article>
-    <h5>P.S. atsiprasau kad as berastis bet net nezadu rasyt lietuviskai, jus neisivaizduojat kiek tai uztrunka :D</h5>
-</div>
+    <span id="tevelio">Nepyk Greta skubejau visus puslapius padaryt tai kazko labai linksmo nesugalvojau, padariau kad galetum kilnot ta imposteri :D</span>
 
+    <button id="click">#</button> 
+<script type="text/javascript"> 
+	var button = document.getElementById("click"); 
+	var body = document.getElementsByTagName("body");	 
+ 
+	button.addEventListener("click", function () { 
+		body[0].style.backgroundImage = "url('pictures/egg.jpg')" 
+	}); 
+</script> 
 
+    <div id="mydiv">
+        <div id="mydivheader">As dariau asteroidus...</div>
 
+      <script>
+        dragElement(document.getElementById("mydiv"));
+        
+        function dragElement(elmnt) {
+          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+          if (document.getElementById(elmnt.id + "header")) {
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+          } else {
+            elmnt.onmousedown = dragMouseDown;
+          }
+        
+          function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            document.onmousemove = elementDrag;
+          }
+        
+          function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+          }
+        
+          function closeDragElement() {
+            document.onmouseup = null;
+            document.onmousemove = null;
+          }
+        }
+        </script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
