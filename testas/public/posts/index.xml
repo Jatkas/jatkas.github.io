@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on testas</title>
-    <link>https://jatkas.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on testas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jan 2025 21:17:05 +0200</lastBuildDate><atom:link href="https://jatkas.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jan 2025 21:17:05 +0200</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terminalas_pakeistas</title>
-      <link>https://jatkas.github.io/posts/terminalas/</link>
+      <link>http://localhost:1313/posts/terminalas/</link>
       <pubDate>Mon, 20 Jan 2025 21:17:05 +0200</pubDate>
       
-      <guid>https://jatkas.github.io/posts/terminalas/</guid>
+      <guid>http://localhost:1313/posts/terminalas/</guid>
       <description>&lt;p&gt;Testuoju kaip veikia sitie uzrasai.&lt;/p&gt;</description>
       <content>&lt;p&gt;Testuoju kaip veikia sitie uzrasai.&lt;/p&gt;
 </content>
